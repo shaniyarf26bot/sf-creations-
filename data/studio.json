@@ -1,0 +1,408 @@
+{
+  "settings": {
+    "brandTitle": "SF CREATIONS",
+    "brandSubtitle": "BY SHANIYA FONSEKA",
+    "tagline": "CREATIVE IDEAS. VISUAL STORIES.",
+    "heroSupportingText": "Transforming ideas into engaging visuals, meaningful stories and creative digital experiences.",
+    "heroBackdropUrl": "/assets/hero_cinema_camera.jpg",
+    "aboutBackdropUrl": "/assets/aistudio/Gemini_Generated_Image_fhj16ifhj16ifhj1_2d43888d.jpeg",
+    "logoUrl": "/assets/aistudio/sf_creation_logo_transparent_bbee9a2c.webp",
+    "aboutParagraphs": [
+      "I'm Shaniya Fonseka, a freelance Mobile Videographer, Content Creator and Digital Media Creative based in Sri Lanka.",
+      "I specialise in mobile videography, photography, creative video editing, graphic design and social media content creation. My experience includes promotional campaigns, brand collaborations, event productions and creative media projects.",
+      "I've also worked in assistant direction and scriptwriting, bringing creative ideas to life through visual storytelling.",
+      "I enjoy transforming simple concepts into engaging visuals, meaningful stories and creative digital experiences. For me, every project is an opportunity to create something meaningful."
+    ],
+    "aboutHighlight": "MOBILE VIDEOGRAPHER | CONTENT CREATOR | DIGITAL MEDIA CREATIVE",
+    "aboutCreativeStatement": "CREATIVITY MEETS STORYTELLING.",
+    "contactHeading": "LET'S CREATE SOMETHING AMAZING TOGETHER.",
+    "contactSupportingText": "Have a creative idea, project or collaboration in mind? I'd love to hear from you. Let's bring your vision to life.",
+    "whatsappDisplay": "072 3260085",
+    "whatsappUrl": "https://wa.me/94723260085",
+    "email": "sfcreations26@gmail.com",
+    "instagramHandle": "@_shaniya_fonseka_",
+    "instagramUrl": "https://www.instagram.com/_shaniya_fonseka_/",
+    "sfInstagramHandle": "@sf__creations__",
+    "sfInstagramUrl": "https://www.instagram.com/sf__creations__?igsh=MTgyM3F1OW9qOTc0Nw==",
+    "tiktokHandle": "@shaniyafonseka",
+    "tiktokUrl": "https://www.tiktok.com/@shaniyafonseka",
+    "linkedinName": "Shaniya Fonseka",
+    "linkedinUrl": "https://www.linkedin.com/in/shaniya-fonseka-4052142b4",
+    "copyrightText": "© 2026 SF Creations. All Rights Reserved."
+  },
+  "services": [
+    {
+      "id": "srv-1",
+      "number": "01",
+      "title": "Content Creation",
+      "description": "Concept-driven visual storytelling tailored to communicate brand personality, engage audiences, and elevate digital presence.",
+      "iconKey": "sparkles"
+    },
+    {
+      "id": "srv-2",
+      "number": "02",
+      "title": "Mobile Videography",
+      "description": "Agile, cinematic mobile filmmaking designed for dynamic vertical reels, campaigns, events, and authentic on-location coverage.",
+      "iconKey": "smartphone"
+    },
+    {
+      "id": "srv-3",
+      "number": "03",
+      "title": "Photography",
+      "description": "Thoughtfully composed lifestyle, brand, product, and event photography capturing atmosphere, texture, and genuine moments.",
+      "iconKey": "camera"
+    },
+    {
+      "id": "srv-4",
+      "number": "04",
+      "title": "Video Editing",
+      "description": "Rhythmic pacing, seamless transitions, sound design, and refined colour grading crafted for impactful visual narratives.",
+      "iconKey": "scissors"
+    },
+    {
+      "id": "srv-5",
+      "number": "05",
+      "title": "Graphic Design",
+      "description": "Distinctive visual identities, promotional posters, event graphics, invitations, and cohesive digital design assets.",
+      "iconKey": "layers"
+    },
+    {
+      "id": "srv-6",
+      "number": "06",
+      "title": "Social Media Content Creation",
+      "description": "Platform-native Instagram Reels, TikTok stories, and campaign visuals engineered to capture attention and inspire sharing.",
+      "iconKey": "share"
+    },
+    {
+      "id": "srv-7",
+      "number": "07",
+      "title": "Assistant Direction",
+      "description": "On-set creative coordination, shot scheduling, talent direction support, and seamless production flow from concept to wrap.",
+      "iconKey": "clapperboard"
+    },
+    {
+      "id": "srv-8",
+      "number": "08",
+      "title": "Scriptwriting",
+      "description": "Compelling narrative concepts, campaign hooks, dialogue, and shot-by-shot visual scripts built to resonate with viewers.",
+      "iconKey": "pen"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "category": "brand",
+      "title": "3li Salon – Nugegoda",
+      "role": "Videography & Video Editing",
+      "description": "Promotional video content for a beauty and salon business.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_14439320065244779024_6e25652b.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT",
+          "url": "https://www.instagram.com/reel/DbjR5NnTw-4/"
+        }
+      ]
+    },
+    {
+      "id": "proj-2",
+      "category": "brand",
+      "title": "Summer 67",
+      "role": "Videography & Video Editing",
+      "description": "Promotional video production and creative visual storytelling.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_10362031468302662102_5ea43246.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT",
+          "url": "https://www.instagram.com/reel/DZefsQbKO4y/"
+        }
+      ]
+    },
+    {
+      "id": "proj-3",
+      "category": "brand",
+      "title": "Giftora Lush",
+      "role": "Videography & Content Creation",
+      "description": "Creative promotional content for gift boxes and gifting products.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_5010720187393258728_915b6a0b.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT",
+          "url": "https://www.instagram.com/reel/DcD7RwGPcJl/"
+        }
+      ]
+    },
+    {
+      "id": "proj-4",
+      "category": "campaigns",
+      "title": "HNB Nallur Festival",
+      "role": "Videography & Creative Editing",
+      "description": "Social media video content capturing the atmosphere and experiences of the Nallur Festival.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_3963397923148380697_3acb625f.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT 1",
+          "url": "https://vt.tiktok.com/ZSbm4FDQL/"
+        },
+        {
+          "label": "WATCH PROJECT 2",
+          "url": "https://vt.tiktok.com/ZSbm4eGNE/"
+        },
+        {
+          "label": "WATCH PROJECT 3",
+          "url": "https://vt.tiktok.com/ZSbm42nvd/"
+        },
+        {
+          "label": "WATCH PROJECT 4",
+          "url": "https://vt.tiktok.com/ZSbm46cPG/"
+        }
+      ]
+    },
+    {
+      "id": "proj-5",
+      "category": "campaigns",
+      "title": "HNB Awurudu 2026 – ITN",
+      "role": "Social Media Videography & Content Creation",
+      "description": "Creative video content produced for the HNB Awurudu campaign.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_2480821691905576875_c458b19b.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT 1",
+          "url": "https://www.tiktok.com/@hnb.srilanka/video/7628472916727827713"
+        },
+        {
+          "label": "WATCH PROJECT 2",
+          "url": "https://www.tiktok.com/@hnb.srilanka/video/7628475408983264528"
+        },
+        {
+          "label": "WATCH PROJECT 3",
+          "url": "https://www.tiktok.com/@hnb.srilanka/video/7628558625996279041"
+        },
+        {
+          "label": "WATCH PROJECT 4",
+          "url": "https://www.tiktok.com/@hnb.srilanka/video/7628559700182830353"
+        }
+      ]
+    },
+    {
+      "id": "proj-6",
+      "category": "production",
+      "title": "Pan Asia Bank – TV Commercials",
+      "role": "Assistant Director – Creative Production",
+      "description": "Involvement in creative production and assistant direction.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_15917496150418219795_a7bfd4e4.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT 1",
+          "url": "https://www.facebook.com/share/r/1JVA2rkePJ/"
+        },
+        {
+          "label": "WATCH PROJECT 2",
+          "url": "https://www.facebook.com/share/r/1D49JpS3Yk/"
+        }
+      ]
+    },
+    {
+      "id": "proj-7",
+      "category": "production",
+      "title": "Shervin Events",
+      "role": "Assistant Director & Script Writer",
+      "description": "Creative production, assistant direction and scriptwriting for event-related productions.",
+      "thumbnailUrl": "/assets/aistudio/watermarked_img_4218497732960726542_d2e1c33f.jpg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH PROJECT 1",
+          "url": "https://www.tiktok.com/@brosentertainment5/video/7613373358775864594"
+        },
+        {
+          "label": "WATCH PROJECT 2",
+          "url": "https://www.tiktok.com/@brosentertainment5/video/7614855889555672338"
+        },
+        {
+          "label": "WATCH PROJECT 3",
+          "url": "https://www.tiktok.com/@brosentertainment5/video/7616345377129680136"
+        },
+        {
+          "label": "WATCH PROJECT 4",
+          "url": "https://www.tiktok.com/@brosentertainment5/video/7621221220159130900"
+        }
+      ]
+    },
+    {
+      "id": "proj-8",
+      "category": "production",
+      "title": "Airtel Sri Lanka – TV Commercials",
+      "role": "Assistant Director (AD)",
+      "description": "Worked as an Assistant Director on Airtel Sri Lanka television commercial productions, contributing to the creative production process and assisting with the execution of commercial shoots.",
+      "thumbnailUrl": "/assets/aistudio/Gemini_Generated_Image_suy772suy772suy7_75077ad2.jpeg",
+      "isCustomThumbnail": true,
+      "links": [
+        {
+          "label": "WATCH COMMERCIAL 01",
+          "url": "https://www.tiktok.com/@airtel_srilanka/video/7667107488629591317"
+        },
+        {
+          "label": "WATCH COMMERCIAL 02",
+          "url": "https://www.tiktok.com/@airtel_srilanka/video/7669467060652559636"
+        },
+        {
+          "label": "WATCH COMMERCIAL 03",
+          "url": "https://www.tiktok.com/@airtel_srilanka/video/7661920492999249173"
+        },
+        {
+          "label": "WATCH COMMERCIAL 04",
+          "url": "https://www.tiktok.com/@airtel_srilanka/video/7665717300917488917"
+        }
+      ]
+    }
+  ],
+  "graphicDesigns": [],
+  "creativeVideos": [],
+  "packages": [
+    {
+      "id": "pkg-1",
+      "name": "Social Media Content Creation",
+      "inquiryServiceMatch": "Social Media Content Creation",
+      "description": "End-to-end visual content tailored for Instagram Reels, TikTok, and digital brand storytelling.",
+      "deliverables": [
+        "Creative concept & content planning",
+        "On-location mobile filming & photography",
+        "Platform-optimised vertical video edits",
+        "Visual consistency aligned with your brand"
+      ],
+      "iconKey": "share",
+      "priceNote": "Contact for Pricing / Custom Quote"
+    },
+    {
+      "id": "pkg-2",
+      "name": "Mobile Videography",
+      "inquiryServiceMatch": "Mobile Videography",
+      "description": "Dynamic, agile mobile video coverage for businesses, product launches, hospitality, and live events across Sri Lanka.",
+      "deliverables": [
+        "Cinematic stabilised mobile shooting",
+        "Creative framing, movement & lighting focus",
+        "Event highlights or brand promotional footage",
+        "Seamless coordination on shoot day"
+      ],
+      "iconKey": "smartphone",
+      "priceNote": "Contact for Pricing / Custom Quote"
+    },
+    {
+      "id": "pkg-3",
+      "name": "Video Editing",
+      "inquiryServiceMatch": "Video Editing",
+      "description": "Transform raw footage into polished, rhythm-driven stories ready for social platforms or brand campaigns.",
+      "deliverables": [
+        "Story-first sequencing & pacing",
+        "Music syncing, sound effects & transitions",
+        "Refined colour grading & typography",
+        "Multi-format export for Reels, TikTok & web"
+      ],
+      "iconKey": "scissors",
+      "priceNote": "Contact for Pricing / Custom Quote"
+    },
+    {
+      "id": "pkg-4",
+      "name": "Graphic Design",
+      "inquiryServiceMatch": "Graphic Design",
+      "description": "Bespoke visual identities, promotional posters, event graphics, invitations, and campaign collateral.",
+      "deliverables": [
+        "Social media & advertisement visuals",
+        "Event posters, flyers & custom invitations",
+        "Brand identity & logo visual exploration",
+        "Print-ready and digital-ready deliverables"
+      ],
+      "iconKey": "layers",
+      "priceNote": "Contact for Pricing / Custom Quote"
+    },
+    {
+      "id": "pkg-5",
+      "name": "Custom Creative Projects",
+      "inquiryServiceMatch": "Custom Creative Projects",
+      "description": "Tailored multi-disciplinary collaborations combining scriptwriting, assistant direction, videography, and design.",
+      "deliverables": [
+        "Concept development & scriptwriting",
+        "Assistant direction & production support",
+        "Combined video, photo & graphic deliverables",
+        "Bespoke scope built around your brief"
+      ],
+      "iconKey": "clapperboard",
+      "priceNote": "Contact for Pricing / Custom Quote"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "clientName": "3li Salon",
+      "roleOrCompany": "",
+      "quote": "Working with Shaniya was a wonderful experience. Her creativity, attention to detail and dedication really made a difference. She understood our vision and brought it to life beautifully.",
+      "projectType": "",
+      "createdAt": "2026-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "test-2",
+      "clientName": "Giftora Lush",
+      "roleOrCompany": "",
+      "quote": "Shaniya has a natural talent for visual storytelling. The content was creative, engaging and beautifully presented. We truly appreciated her effort and professionalism.",
+      "projectType": "",
+      "createdAt": "2026-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "test-3",
+      "clientName": "HNB Creative Production Collaborator",
+      "roleOrCompany": "",
+      "quote": "Her passion for creativity and commitment to the project were impressive. She brought fresh ideas and a positive attitude to the production team.",
+      "projectType": "",
+      "createdAt": "2026-11-15T00:00:00.000Z"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "What services does SF Creations offer?",
+      "answer": "SF Creations offers Mobile Videography, Content Creation, Social Media Content Creation, Video Editing, Photography, Graphic Design, Assistant Direction, and Scriptwriting for brands, events, and creative projects in Sri Lanka."
+    },
+    {
+      "id": "faq-2",
+      "question": "How can I request a booking?",
+      "answer": "You can submit your project details through the Booking & Project Inquiry form on this website or reach out directly via WhatsApp or email. All inquiries are reviewed personally before availability and bookings are confirmed."
+    },
+    {
+      "id": "faq-3",
+      "question": "How is pricing calculated?",
+      "answer": "Every project is quoted individually based on your specific requirements, shoot duration, location, creative scope, and deliverables. Submit an inquiry with your brief to receive a tailored custom quote."
+    },
+    {
+      "id": "faq-4",
+      "question": "Do you work with businesses and individual clients?",
+      "answer": "Yes. SF Creations collaborates with corporate brands, salons, retail businesses, hospitality venues, event organisers, production teams, and individual clients looking for high-quality creative media."
+    },
+    {
+      "id": "faq-5",
+      "question": "How long does a project take?",
+      "answer": "Timelines depend on the nature and complexity of the project, shoot requirements, and editing or design scope. Expected delivery schedules are discussed and agreed upon clearly during your consultation."
+    },
+    {
+      "id": "faq-6",
+      "question": "Can I request customised creative services?",
+      "answer": "Absolutely. If your project requires a combination of mobile videography, graphic design, scriptwriting, or assistant direction, you can select Custom Creative Projects in the inquiry form and outline your vision."
+    },
+    {
+      "id": "faq-7",
+      "question": "How can I share my project requirements?",
+      "answer": "Use the Booking & Project Inquiry form to share your preferred date, service type, and project overview. Once submitted, we can also exchange moodboards, references, and scripts via email or WhatsApp."
+    },
+    {
+      "id": "faq-8",
+      "question": "How do I contact SF Creations?",
+      "answer": "You can reach Shaniya Fonseka directly via WhatsApp on 072 3260085, by email at sfcreations26@gmail.com, or through Instagram (@_shaniya_fonseka_), TikTok (@shaniyafonseka), and LinkedIn."
+    }
+  ],
+  "inquiries": []
+}
