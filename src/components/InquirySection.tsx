@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2, MessageCircle, Send } from 'lucide-react';
+import { CheckCircle2, Mail, MessageCircle, Send } from 'lucide-react';
 import { INQUIRY_SERVICE_OPTIONS, type ServiceOption, type SiteSettings } from '../types.ts';
 
 interface InquirySectionProps {
@@ -21,9 +21,13 @@ export function InquirySection({ selectedService, settings }: InquirySectionProp
   const [error, setError] = useState('');
   const [submittedRecord, setSubmittedRecord] = useState<{
     fullName: string;
+    email: string;
+    whatsapp: string;
     service: string;
     preferredDate: string;
     description: string;
+    additionalInfo: string;
+    savedToServer: boolean;
   } | null>(null);
 
   useEffect(() => {
@@ -48,33 +52,31 @@ export function InquirySection({ selectedService, settings }: InquirySectionProp
     }
 
     setSubmitting(true);
+    const trimmedRecord = {
+      fullName: fullName.trim(),
+      email: email.trim(),
+      whatsapp: whatsapp.trim(),
+      service,
+      preferredDate,
+      description: description.trim(),
+      additionalInfo: additionalInfo.trim(),
+    };
+
     try {
       const response = await fetch('/api/inquiries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          fullName: fullName.trim(),
-          email: email.trim(),
-          whatsapp: whatsapp.trim(),
-          service,
-          preferredDate,
-          description: description.trim(),
-          additionalInfo: additionalInfo.trim(),
-        }),
+        body: JSON.stringify(trimmedRecord),
       });
 
-      const payload = (await response.json()) as { error?: string; success?: boolean };
-      if (!response.ok) {
-        setError(payload.error || 'Unable to submit your inquiry right now. Please try again.');
+      if (response.status === 400) {
+        const payload = (await response.json()) as { error?: string };
+        setError(payload.error || 'Please check your details and try again.');
         return;
       }
 
-      setSubmittedRecord({
-        fullName: fullName.trim(),
-        service,
-        preferredDate,
-        description: description.trim(),
-      });
+      const savedToServer = response.ok;
+      setSubmittedRecord({ ...trimmedRecord, savedToServer });
       setFullName('');
       setEmail('');
       setWhatsapp('');
@@ -82,17 +84,43 @@ export function InquirySection({ selectedService, settings }: InquirySectionProp
       setDescription('');
       setAdditionalInfo('');
     } catch {
-      setError('Network error while submitting your inquiry. Please try again or contact via WhatsApp.');
+      // Static-host fallback: proceed smoothly to direct WhatsApp / Email handoff
+      setSubmittedRecord({ ...trimmedRecord, savedToServer: false });
+      setFullName('');
+      setEmail('');
+      setWhatsapp('');
+      setPreferredDate('');
+      setDescription('');
+      setAdditionalInfo('');
     } finally {
       setSubmitting(false);
     }
   };
 
+  const inquirySummaryText = submittedRecord
+    ? [
+        'Hi Shaniya, I would like to submit a project inquiry for SF Creations.',
+        `Name: ${submittedRecord.fullName}`,
+        `Email: ${submittedRecord.email}`,
+        `WhatsApp: ${submittedRecord.whatsapp}`,
+        `Service: ${submittedRecord.service}`,
+        `Preferred Date: ${submittedRecord.preferredDate}`,
+        `Details: ${submittedRecord.description}`,
+        submittedRecord.additionalInfo ? `Additional Info: ${submittedRecord.additionalInfo}` : '',
+      ]
+        .filter(Boolean)
+        .join('\n')
+    : '';
+
   const whatsappDirectLink = submittedRecord
-    ? `${settings.whatsappUrl}?text=${encodeURIComponent(
-        `Hi Shaniya, I just submitted an inquiry on SF Creations.\nName: ${submittedRecord.fullName}\nService: ${submittedRecord.service}\nPreferred Date: ${submittedRecord.preferredDate}\nDetails: ${submittedRecord.description}`
-      )}`
+    ? `${settings.whatsappUrl}?text=${encodeURIComponent(inquirySummaryText)}`
     : settings.whatsappUrl;
+
+  const mailtoDirectLink = submittedRecord
+    ? `mailto:${settings.email}?subject=${encodeURIComponent(
+        `Project Inquiry: ${submittedRecord.service} — ${submittedRecord.fullName}`
+      )}&body=${encodeURIComponent(inquirySummaryText)}`
+    : `mailto:${settings.email}`;
 
   return (
     <section
@@ -123,17 +151,19 @@ export function InquirySection({ selectedService, settings }: InquirySectionProp
           {submittedRecord ? (
             <div className="py-8 text-center max-w-xl mx-auto">
               <CheckCircle2 className="w-12 h-12 text-[#D5B982] mx-auto mb-5" strokeWidth={1.4} />
-              <h3 className="font-display text-3xl text-[#F4EFE6]">Inquiry Received</h3>
+              <h3 className="font-display text-3xl text-[#F4EFE6]">
+                {submittedRecord.savedToServer ? 'Inquiry Received' : 'Inquiry Ready to Send'}
+              </h3>
               <p className="mt-4 text-sm sm:text-base text-[#F4EFE6]/85 leading-relaxed font-light">
-                Thank you for choosing SF Creations! Your inquiry has been successfully submitted.
-                I&apos;ll review your request and contact you soon to discuss the project,
-                availability and pricing.
+                {submittedRecord.savedToServer
+                  ? "Thank you for choosing SF Creations! Your inquiry has been successfully submitted. I'll review your request and contact you soon to discuss the project, availability and pricing."
+                  : 'Thank you for choosing SF Creations! Tap WhatsApp or Email below to send your pre-filled inquiry directly to Shaniya so she can confirm availability and pricing.'}
               </p>
               <p className="mt-4 text-xs tracking-[0.14em] uppercase text-[#888078]">
                 Status: Pending Personal Review · No automatic charges or confirmations
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="mt-8 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
                 <a
                   href={whatsappDirectLink}
                   target="_blank"
@@ -141,7 +171,14 @@ export function InquirySection({ selectedService, settings }: InquirySectionProp
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#D5B982] text-[#171717] hover:bg-[#F4EFE6] text-xs font-semibold tracking-[0.18em] uppercase transition-colors"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>Message on WhatsApp</span>
+                  <span>Send on WhatsApp</span>
+                </a>
+                <a
+                  href={mailtoDirectLink}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-[#D5B982] text-[#D5B982] hover:bg-[#D5B982] hover:text-[#171717] text-xs font-semibold tracking-[0.18em] uppercase transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span>Send via Email</span>
                 </a>
                 <button
                   type="button"

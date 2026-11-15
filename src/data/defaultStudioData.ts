@@ -7,9 +7,9 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
     tagline: 'CREATIVE IDEAS. VISUAL STORIES.',
     heroSupportingText:
       'Transforming ideas into engaging visuals, meaningful stories and creative digital experiences.',
-    heroBackdropUrl: '/assets/hero_cinema_camera.jpg',
-    aboutBackdropUrl: '/assets/aistudio/Gemini_Generated_Image_fhj16ifhj16ifhj1_2d43888d.jpeg',
-    logoUrl: '/assets/aistudio/sf_creation_logo_transparent_bbee9a2c.webp',
+    heroBackdropUrl: './assets/hero_cinema_camera.jpg',
+    aboutBackdropUrl: './assets/aistudio/Gemini_Generated_Image_fhj16ifhj16ifhj1_2d43888d.jpeg',
+    logoUrl: './assets/aistudio/sf_creation_logo_transparent_bbee9a2c.webp',
     aboutParagraphs: [
       "I'm Shaniya Fonseka, a freelance Mobile Videographer, Content Creator and Digital Media Creative based in Sri Lanka.",
       'I specialise in mobile videography, photography, creative video editing, graphic design and social media content creation. My experience includes promotional campaigns, brand collaborations, event productions and creative media projects.',
@@ -107,7 +107,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       title: '3li Salon – Nugegoda',
       role: 'Videography & Video Editing',
       description: 'Promotional video content for a beauty and salon business.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_14439320065244779024_6e25652b.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_14439320065244779024_6e25652b.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -122,7 +122,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       title: 'Summer 67',
       role: 'Videography & Video Editing',
       description: 'Promotional video production and creative visual storytelling.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_10362031468302662102_5ea43246.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_10362031468302662102_5ea43246.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -137,7 +137,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       title: 'Giftora Lush',
       role: 'Videography & Content Creation',
       description: 'Creative promotional content for gift boxes and gifting products.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_5010720187393258728_915b6a0b.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_5010720187393258728_915b6a0b.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -153,7 +153,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Videography & Creative Editing',
       description:
         'Social media video content capturing the atmosphere and experiences of the Nallur Festival.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_3963397923148380697_3acb625f.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_3963397923148380697_3acb625f.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -180,7 +180,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       title: 'HNB Awurudu 2026 – ITN',
       role: 'Social Media Videography & Content Creation',
       description: 'Creative video content produced for the HNB Awurudu campaign.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_2480821691905576875_c458b19b.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_2480821691905576875_c458b19b.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -207,7 +207,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       title: 'Pan Asia Bank – TV Commercials',
       role: 'Assistant Director – Creative Production',
       description: 'Involvement in creative production and assistant direction.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_15917496150418219795_a7bfd4e4.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_15917496150418219795_a7bfd4e4.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -227,7 +227,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Assistant Director & Script Writer',
       description:
         'Creative production, assistant direction and scriptwriting for event-related productions.',
-      thumbnailUrl: '/assets/aistudio/watermarked_img_4218497732960726542_d2e1c33f.jpg',
+      thumbnailUrl: './assets/aistudio/watermarked_img_4218497732960726542_d2e1c33f.jpg',
       isCustomThumbnail: true,
       links: [
         {
@@ -255,7 +255,7 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Assistant Director (AD)',
       description:
         'Worked as an Assistant Director on Airtel Sri Lanka television commercial productions, contributing to the creative production process and assisting with the execution of commercial shoots.',
-      thumbnailUrl: '/assets/aistudio/Gemini_Generated_Image_suy772suy772suy7_75077ad2.jpeg',
+      thumbnailUrl: './assets/aistudio/Gemini_Generated_Image_suy772suy772suy7_75077ad2.jpeg',
       isCustomThumbnail: true,
       links: [
         {
