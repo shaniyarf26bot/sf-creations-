@@ -129,7 +129,7 @@ export default function App() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="min-h-screen bg-[#171717] text-[#F4EFE6] selection:bg-[#D5B982] selection:text-[#171717]">
+      <div className="min-h-screen w-full overflow-x-hidden bg-[#171717] text-[#F4EFE6] selection:bg-[#D5B982] selection:text-[#171717]">
         <Navbar activeSection={activeSection} onNavigate={navigateToSection} />
 
         <main>

@@ -12,11 +12,14 @@
 }
 
 @layer base {
-  html {
+  html,
+  body {
     scroll-behavior: smooth;
     background-color: #171717;
     color: #F4EFE6;
     font-family: var(--font-sans);
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   h1, h2, h3, .font-display {

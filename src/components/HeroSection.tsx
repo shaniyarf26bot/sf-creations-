@@ -11,7 +11,7 @@ export function HeroSection({ settings, onNavigate }: HeroSectionProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#171717] pt-24 pb-16 px-5 sm:px-8"
+      className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#171717] pt-24 pb-16 px-5 sm:px-8"
     >
       {/* Cinematic Dark Filmmaking Background with Slow Pan */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -32,7 +32,7 @@ export function HeroSection({ settings, onNavigate }: HeroSectionProps) {
       />
 
       {/* Centered Brand Showcase */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+      <div className="relative z-10 w-full max-w-4xl mx-auto text-center flex flex-col items-center">
         {/* Official SF Creations Logo Reveal (preserved without distortion or cropping) */}
         <motion.div
           initial={{ opacity: 0, y: 14, scale: 0.96 }}
@@ -53,12 +53,12 @@ export function HeroSection({ settings, onNavigate }: HeroSectionProps) {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center text-center"
+          className="w-full flex flex-col items-center text-center"
         >
-          <h1 className="font-display text-[64px] font-semibold tracking-[0.14em] text-[#af8f4a] drop-shadow-[0_4px_24px_rgba(213,185,130,0.18)] leading-[1.02] uppercase">
+          <h1 className="font-display text-[38px] sm:text-[52px] md:text-[64px] font-semibold tracking-[0.1em] sm:tracking-[0.14em] text-[#af8f4a] drop-shadow-[0_4px_24px_rgba(213,185,130,0.18)] leading-[1.05] uppercase text-center">
             {settings.brandTitle}
           </h1>
-          <p className="mt-2.5 sm:mt-3 font-sans text-xs sm:text-sm md:text-base font-medium tracking-[0.42em] text-[#D5B982] uppercase">
+          <p className="mt-2.5 sm:mt-3 font-sans text-[11px] sm:text-sm md:text-base font-medium tracking-[0.26em] sm:tracking-[0.42em] text-[#D5B982] uppercase text-center">
             {settings.brandSubtitle}
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ export function HeroSection({ settings, onNavigate }: HeroSectionProps) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.38, ease: [0.16, 1, 0.3, 1] }}
-          className="w-[300.927px] font-display text-xl sm:text-2xl md:text-3xl italic tracking-[0.12em] text-[#F4EFE6] uppercase"
+          className="w-full max-w-[300.927px] sm:w-[300.927px] font-display text-xl sm:text-2xl md:text-3xl italic tracking-[0.12em] text-[#F4EFE6] uppercase text-center"
         >
           {settings.tagline}
         </motion.p>
