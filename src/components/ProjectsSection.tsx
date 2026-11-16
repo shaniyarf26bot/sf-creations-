@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ExternalLink, Film } from 'lucide-react';
@@ -21,13 +22,19 @@ const CATEGORY_META: Record<
   production: {
     heading: 'CATEGORY C – CREATIVE PRODUCTION',
   },
+  events: {
+    heading: 'CATEGORY D – EVENTS, ENTERTAINMENT & LIVE EXPERIENCES',
+    subtitle: 'CAPTURING THE ENERGY, EMOTION AND MOMENTS BEHIND EVERY EVENT.',
+  },
 };
 
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   const [filter, setFilter] = useState<'all' | ProjectCategory>('all');
 
   const categoriesToShow: ProjectCategory[] =
-    filter === 'all' ? ['brand', 'campaigns', 'production'] : [filter];
+    filter === 'all'
+      ? ['brand', 'campaigns', 'production', 'events']
+      : [filter];
 
   return (
     <section
@@ -51,7 +58,6 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             </h2>
           </motion.div>
 
-          {/* Interactive Category Filter */}
           <div
             role="tablist"
             aria-label="Filter projects by category"
@@ -63,6 +69,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 { id: 'brand', label: 'Brand & Business' },
                 { id: 'campaigns', label: 'Campaigns & Events' },
                 { id: 'production', label: 'Creative Production' },
+                { id: 'events', label: 'Events & Entertainment' },
               ] as const
             ).map((tab) => {
               const active = filter === tab.id;
@@ -86,7 +93,6 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           </div>
         </div>
 
-        {/* Grouped Project Categories */}
         <div className="mt-16 space-y-20">
           {categoriesToShow.map((catKey) => {
             const catProjects = projects.filter((p) => p.category === catKey);
@@ -123,7 +129,6 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                       className="group bg-[#1C1A19] border border-[#292522] hover:border-[#D5B982]/45 flex flex-col justify-between transition-colors duration-300"
                     >
                       <div>
-                        {/* Project Thumbnail with Zoom on Hover */}
                         <div className="relative aspect-video overflow-hidden bg-[#292522]">
                           {project.thumbnailUrl ? (
                             <img
@@ -148,7 +153,6 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                           )}
                         </div>
 
-                        {/* Project Details */}
                         <div className="p-6 sm:p-7">
                           <p className="text-[11px] font-medium tracking-[0.16em] text-[#D5B982] uppercase">
                             {project.role}
@@ -162,15 +166,12 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         </div>
                       </div>
 
-                      {/* Watch Project Buttons */}
                       <div className="px-6 sm:px-7 pb-6 sm:pb-7 pt-2">
                         <div
                           className={`grid gap-2.5 ${
                             project.links.length === 1
                               ? 'grid-cols-1'
-                              : project.links.length === 2
-                                ? 'grid-cols-1 sm:grid-cols-2'
-                                : 'grid-cols-1 sm:grid-cols-2'
+                              : 'grid-cols-1 sm:grid-cols-2'
                           }`}
                         >
                           {project.links.map((link, linkIdx) => (
