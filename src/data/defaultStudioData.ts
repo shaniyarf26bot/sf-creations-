@@ -284,8 +284,8 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Mobile Videographer',
       description:
         'Captured the special moments, atmosphere and excitement of the Adaraneeya Tharuwak film premiere.',
-      thumbnailUrl: '',
-      isCustomThumbnail: false,
+      thumbnailUrl: '/sf-creations-/assets/adaraneeya-tharuwak.jpg',
+      isCustomThumbnail: true,
       links: [
         {
           label: 'WATCH PROJECT',
@@ -300,8 +300,8 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Mobile Videographer',
       description:
         'Captured the excitement and atmosphere of the Manamala Katha song premiere by Kanchana Anuradhi.',
-      thumbnailUrl: '',
-      isCustomThumbnail: false,
+      thumbnailUrl: '/sf-creations-/assets/manamala-katha.jpg',
+      isCustomThumbnail: true,
       links: [
         {
           label: 'WATCH PROJECT',
@@ -316,8 +316,8 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Mobile Videographer',
       description:
         'Collaborated on video production projects, contributing mobile videography and creative visual storytelling.',
-      thumbnailUrl: '',
-      isCustomThumbnail: false,
+      thumbnailUrl: '/sf-creations-/assets/thinking-bird-productions.jpg',
+      isCustomThumbnail: true,
       links: [
         {
           label: 'WATCH PROJECT',
@@ -332,8 +332,8 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
       role: 'Mobile Videographer',
       description:
         'Captured the energy, performances and atmosphere of ROTA FIESTA 2026 at KDU.',
-      thumbnailUrl: '',
-      isCustomThumbnail: false,
+      thumbnailUrl: '/sf-creations-/assets/rota-fiesta-26.jpg',
+      isCustomThumbnail: true,
       links: [
         {
           label: 'WATCH PROJECT',
