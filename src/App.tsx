@@ -1,3 +1,4 @@
+
 import { useCallback, useEffect, useState } from 'react';
 import { MotionConfig } from 'motion/react';
 import { DEFAULT_STUDIO_DATA } from './data/defaultStudioData.ts';
@@ -15,6 +16,7 @@ import { TestimonialsSection } from './components/TestimonialsSection.tsx';
 import { FaqSection } from './components/FaqSection.tsx';
 import { InquirySection } from './components/InquirySection.tsx';
 import { ContactSection } from './components/ContactSection.tsx';
+import { RatingsSection } from './components/RatingsSection.tsx';
 import { Footer } from './components/Footer.tsx';
 import { StudioManagerModal, type StudioTab } from './components/StudioManagerModal.tsx';
 
@@ -30,6 +32,7 @@ const TRACKED_SECTIONS = [
   'faq',
   'inquiry',
   'contact',
+  'ratings',
 ];
 
 function mapServiceTitleToOption(title: string): ServiceOption {
@@ -53,7 +56,6 @@ export default function App() {
     testimonials: DEFAULT_STUDIO_DATA.testimonials,
     faqs: DEFAULT_STUDIO_DATA.faqs,
   });
-
   const [activeSection, setActiveSection] = useState('home');
   const [selectedInquiryService, setSelectedInquiryService] = useState<ServiceOption | ''>('');
   const [studioOpen, setStudioOpen] = useState(false);
@@ -131,7 +133,6 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <div className="min-h-screen w-full overflow-x-hidden bg-[#171717] text-[#F4EFE6] selection:bg-[#D5B982] selection:text-[#171717]">
         <Navbar activeSection={activeSection} onNavigate={navigateToSection} />
-
         <main>
           <HeroSection settings={studioData.settings} onNavigate={navigateToSection} />
           <MarqueeStrip />
@@ -154,8 +155,8 @@ export default function App() {
             settings={studioData.settings}
           />
           <ContactSection settings={studioData.settings} />
+          <RatingsSection />
         </main>
-
         <Footer
           settings={studioData.settings}
           onNavigate={navigateToSection}
