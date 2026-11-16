@@ -17,7 +17,11 @@ export const GRAPHIC_DESIGN_CATEGORIES: GraphicDesignCategory[] = [
   'Digital Designs',
 ];
 
-export type ProjectCategory = 'brand' | 'campaigns' | 'production';
+export type ProjectCategory =
+  | 'brand'
+  | 'campaigns'
+  | 'production'
+  | 'events';
 
 export type InquiryStatus = 'pending' | 'reviewed' | 'confirmed' | 'archived';
 
