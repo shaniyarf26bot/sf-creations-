@@ -1,3 +1,4 @@
+
 import type { StudioDatabase } from '../types.ts';
 
 export const DEFAULT_STUDIO_DATA: StudioDatabase = {
@@ -273,6 +274,70 @@ export const DEFAULT_STUDIO_DATA: StudioDatabase = {
         {
           label: 'WATCH COMMERCIAL 04',
           url: 'https://www.tiktok.com/@airtel_srilanka/video/7665717300917488917',
+        },
+      ],
+    },
+    {
+      id: 'proj-9',
+      category: 'events',
+      title: 'Adaraneeya Tharuwak – Film Premiere',
+      role: 'Mobile Videographer',
+      description:
+        'Captured the special moments, atmosphere and excitement of the Adaraneeya Tharuwak film premiere.',
+      thumbnailUrl: '',
+      isCustomThumbnail: false,
+      links: [
+        {
+          label: 'WATCH PROJECT',
+          url: 'https://www.instagram.com/reel/DbvJpUxIdqk/',
+        },
+      ],
+    },
+    {
+      id: 'proj-10',
+      category: 'events',
+      title: 'Manamala Katha – Song Premiere',
+      role: 'Mobile Videographer',
+      description:
+        'Captured the excitement and atmosphere of the Manamala Katha song premiere by Kanchana Anuradhi.',
+      thumbnailUrl: '',
+      isCustomThumbnail: false,
+      links: [
+        {
+          label: 'WATCH PROJECT',
+          url: 'https://www.instagram.com/reel/DZa5knFz9lh/',
+        },
+      ],
+    },
+    {
+      id: 'proj-11',
+      category: 'events',
+      title: 'Thinking Bird Productions',
+      role: 'Mobile Videographer',
+      description:
+        'Collaborated on video production projects, contributing mobile videography and creative visual storytelling.',
+      thumbnailUrl: '',
+      isCustomThumbnail: false,
+      links: [
+        {
+          label: 'WATCH PROJECT',
+          url: 'https://www.tiktok.com/@thinkingbirdproductions/video/7669402056754679060',
+        },
+      ],
+    },
+    {
+      id: 'proj-12',
+      category: 'events',
+      title: "ROTA FIESTA '26 – KDU",
+      role: 'Mobile Videographer',
+      description:
+        'Captured the energy, performances and atmosphere of ROTA FIESTA 2026 at KDU.',
+      thumbnailUrl: '',
+      isCustomThumbnail: false,
+      links: [
+        {
+          label: 'WATCH PROJECT',
+          url: 'https://www.instagram.com/reel/DVRGwVGkjYI/',
         },
       ],
     },
